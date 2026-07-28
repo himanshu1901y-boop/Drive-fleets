@@ -2,9 +2,7 @@ import axios from "axios";
 import useAuthStore from "../Store/authStore.js";
 
 const API = axios.create({
- //baseURL: "https://drivenow-3q9h.onrender.com/api/v1", 
-  baseURL: "/api/v1", 
-
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:3000/api/v1",
 });
 
 
