@@ -11,6 +11,7 @@ import paymentRouter from "./src/routes/paymentRoutes.js"
 dotenv.config();
 
 const app = express();
+app.use(cors());
 
 
 
